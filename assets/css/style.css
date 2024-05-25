@@ -1339,3 +1339,7 @@ footer .credits a {
 .BodyVeille {
   background-color: #7BCEFF;
 }
+
+.spaced-img {
+  margin-bottom: 20px; /* Ajustez cette valeur selon l'espace souhaité */
+}

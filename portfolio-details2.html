@@ -85,20 +85,18 @@
             <div class="portfolio-info">
               <h3>Project information</h3>
               <ul>
-                <li><strong>Catégorie</strong>: plateforme de mise en relation de personnes </li>
-                <li><strong>Language/Serveur </strong>: PHP, HTML/CSS et MYSQL</li>
-                <li><strong>Logiciel utlisé </strong>: Visual Studio Code, Xampp</li>
-                <li><strong>Client</strong>: Abd El Majid KALLED </li>
-                <li><strong>Date du Projet </strong>: octobre 2021</li>
+                <li><strong>Catégorie</strong>: Application d'emprunt de livre</li>
+                <li><strong>Language/Serveur </strong>: Java et MYSQL</li>
+                <li><strong>Logiciel utlisé </strong>: Visual Studio Code</li>
+                <li><strong>Date du Projet </strong>: janvier 2024</li>
                 <li><strong>URL du Projet </strong>: <a>En local pour l'instant </a></li>
-                <li><strong>Statut </strong>: <a>En cour </a></li>
+                <li><strong>Statut </strong>: <a>En cours </a></li>
               </ul>
             </div>
             <div class="portfolio-description">
-              <h2>Virgule</h2>
+              <h2>Bibliotheque</h2>
               <p>
-                Virgule est une plateforme de mise en relation de personnes dans le cadre d’envoi de lettres au format «
-                papier ». La plateforme permet de « matcher » des profils en fonction de centres d’intérêt renseignés.
+                Bibliotheque est une application d'emprunt de livre
               </p>
               <h2>Fonctionnement</h2>
               <h3>Connexion</h3>
@@ -106,19 +104,6 @@
               <p>L’utilisateur créé tout d’abord son compte :</p>
               <li>Email ou numéro de téléphone</li>
               <li>Mot de passe</li>
-              <p>Le mail est ensuite vérifié via un lien de validation envoyé sur la boite mail de l’utilisateur ou un
-                code envoyé sur le numéro de téléphone.</p>
-              <p>Le mot de passe pourra ensuite être modifié</p>
-              <p>Une fois le compte validé, l’utilisateur peut renseigner son profil :</p>
-              <li>Nom</li>
-              <li>Prenom</li>
-              <li>Adresse postale</li>
-              <p>Dans un premier temps l’adresse postale est composée de champs à renseigner librement</p>
-              <li> Numéro de voie</li>
-              <li> Type de voie (rue, avenue, boulevard, etc….)</li>
-              <li> Ville</li>
-              <li>Code postal</li>
-              <li> Pays</li>
               <li>Centre d’intérêts</li>
               <p>Une liste de choix multiples (ex : politique, sport, philosophie, poésie, cinéma, …)</p>
               <p>Ces éléments pourront ensuite être modifiés dans le profil de l’utilisateur</p>
@@ -132,50 +117,39 @@
               <li>Adresse postale</li>
               <li>Centres d’intérêts</li>
               <br>
-              <h4>Recherche de correspondant</h4>
-              <p>L’utilisateur peux, une fois par jour (ou semaine, à définir) rechercher une personne dans la
-                plateforme. Celui-ci clique sur « Nouvelle Virgule » et l’écran affiche une animation d’adresse
-                (fictives) qui défile rapidement avant de lui afficher l’adresse d’un autre utilisateur ayant au moins
-                un centre d’intérêt commun. L’interface affiche les informations de la personne et enregistre en base de
-                données le fait que cet utilisateur a eu accès aux informations de ce profil avec l’heure d’accès. Si
-                l’utilisateur a déjà fait une recherche ce jour (ou cette semaine), l’interface affiche un message lui
-                indiquant qu’il a déjà fait une recherche en rappelant les infos de la dernière recherche et lui
-                demandant de patienter (en affichant le temps restant jusqu’à la recherche suivante).</p>
+              <h4>Emprunts de livre</h4>
+              <p>Après s'être connecté, l'utilisateur a la possibilité d'emprunter des livres. Cependant, un délai de
+                deux semaines est nécessaire avant que l'utilisateur puisse commencer à emprunter des livres. Cette
+                période d'attente peut être utilisée pour vérifier l'authenticité des informations fournies ou pour
+                d'autres raisons administratives.</p>
 
-              <h4>Mes correspondants</h4>
-              <p>Cette interface affiche la liste des correspondants affichés sur les recherches de l’utilisateur en
-                triant de la plus récente à la plus ancienne. Elle affiche également la liste des personnes ayant eu
-                accès à mon profil via la recherche (toujours du plus récent au plus ancien).</p>
+              <h4>Fonction administrateur</h4>
+              <li>L'application comporte également un compte administrateur avec des privilèges spéciaux.
+                L'administrateur peut :
 
-              <p>Dans cette liste l’utilisateur peut :</p>
-              <li>Indiquer qu’il n’a jamais reçu de courrier de cette personne</li>
-              <li>Signaler un courrier « indésirable » (contenu inapproprié)</li>
-              <li>Bloquer un utilisateur ( Celui-ci n’a donc plus accès au profil et une mention « utilisateur inconnu»
-                apparait dans la liste de ses correspondants )</li>
-              <li>Archiver un profil</li>
-              <li>Marquer en favori une des personnes</li>
-              <li>Décerner un « badge » spécial à une personne</li>
+                Ajouter de nouveaux livres à la bibliothèque,
+                Modifier les informations des livres existants,
+                Supprimer des livres de la bibliothèque.
+                Ces fonctionnalités permettent à l'administrateur de gérer efficacement le catalogue de la bibliothèque
+                et de s'assurer que les utilisateurs ont accès à une collection de livres à jour et pertinente.</li>
+
               <br>
               <h4>Partie technique</h4>
-              <p>La plateforme sera, dans un premier temps, sous la forme d’une plateforme web.
+              <p>
 
-                Pour le développement du code soit en PHP soit ASP.net (en MVC dans les 2 cas).
+                L'application a été développée en utilisant les technologies MySQL et Java :
 
-                Pour la base de donnée, le format est libre (MongoDB ou base de donnée relationnelle).
+                MySQL : Utilisé pour la gestion de la base de données. Toutes les informations concernant les
+                utilisateurs, les livres, et les transactions d'emprunt sont stockées dans une base de données MySQL.
+                Cela permet de gérer efficacement les données et de les récupérer rapidement.
+                Java : Utilisé pour développer la logique applicative. Le backend de l'application est écrit en Java, ce
+                qui assure une performance robuste et une intégration fluide avec la base de données MySQL. Java permet
+                également de créer une interface utilisateur interactive et réactive pour une meilleure expérience
+                utilisateur.
+                Grâce à l'utilisation de MySQL et Java, l'application est capable de gérer efficacement les opérations
+                de la bibliothèque tout en offrant une expérience utilisateur fiable et performante.
 
-                Pour la sauvegarde et la mise en production, utiliser Bitbucket via Git
-
-                Une branche master (ou production) qui sera celle utilisée en ligne
-
-                Une branche staging (ou développement) qui sera celle utilisée pour les tests avant passage en
-                production)
-
-                Une branche ensuite par partie de développement (chaque branche correspond à un ticket jira)
-
-                Chaque publication dans la branche staging ou master doit se faire via une pull request dans bitbucket
-                en ajoutant « Abd El Majid KALLED » comme examinateur.
-
-                Chaque document doit également être ajouté au wiki.</p>
+           </p>
             </div>
           </div>
 
