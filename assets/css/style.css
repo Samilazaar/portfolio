@@ -1343,3 +1343,8 @@ footer .credits a {
 .spaced-img {
   margin-bottom: 20px; /* Ajustez cette valeur selon l'espace souhaité */
 }
+
+.image-container > div {
+  margin-bottom: 20px; /* Ajustez la valeur selon vos besoins */
+}
+
